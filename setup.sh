@@ -282,7 +282,7 @@ function reptile_install {
 function reptile_remove {
 	banner
 
-	load_config "Hide name" "reptile"
+	load_config "Hide name" "linudx"
 	MODULE=$RETVAL
 	DRIVER_DIRECTORY="/lib/modules/$KERNEL_VERSION/kernel/drivers/$DRIVER/$MODULE"
 	

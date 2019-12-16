@@ -72,7 +72,7 @@ static void __khook_init(khook_t *s)
 		struct insn insn;
 #ifdef RHEL_RELEASE_CODE
 	#if RHEL_RELEASE_CODE >= RHEL_RELEASE_VERSION(7, 0)
-		insn_api.init(&insn, s->target + s->length, MAX_INSN_SIZE, x86_64);
+		insn_api.init(&insn, s->target + s->length, x86_64);
 	#else
 		insn_api.init(&insn, s->target + s->length, x86_64);
 	#endif
